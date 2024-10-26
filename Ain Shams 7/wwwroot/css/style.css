@@ -1,0 +1,232 @@
+﻿/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel {
+    height: 100vh; /* 100% من ارتفاع الشاشة */
+}
+
+.carousel-item {
+    height: 100vh; /* 100% من ارتفاع الشاشة */
+}
+
+    .carousel-item img {
+        height: 100vh; /* تعديل حجم الصورة لتناسب ارتفاع السلايد */
+        object-fit: cover; /* لضبط الصورة بحيث تملأ السلايد بدون تمدد غير مناسب */
+        margin: 0;
+        padding: 0;
+    }
+
+.carousel {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.carousel-item img {
+    width: 100%;
+    height: 70vh; /* تعديل ارتفاع الصورة */
+    object-fit: cover; /* يحافظ على تناسب الصورة */
+}
+
+.section-title {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #8b5e34;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.svg-icon-container {
+    margin: 20px 0;
+    text-align: center; /* لجعل الأيقونة في المنتصف */
+}
+
+.section-content {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px; /* يمكنك تعديل الحجم حسب رغبتك */
+    line-height: 1.6; /* لتعديل المسافة بين الأسطر */
+    text-align: justify; /* لضبط النص بحيث يكون متناسقًا على اليمين واليسار */
+
+    background-color: #f8f6eb; /* اللون الخلفي */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    color: #333;
+}
+
+
+
+/* Group 39272 */
+.card-container {
+    position: absolute;
+    width: 332px;
+    height: 285px;
+    left: 959px;
+    top: 2914px;
+    background: linear-gradient(180deg, rgba(255, 235, 202, 0.59) 11.67%, #DCD6C9 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+/* Avatar */
+.avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 102px;
+    margin-top: 16px;
+}
+
+    .avatar img {
+        width: 100px;
+        height: 102px;
+        border-radius: 50%;
+    }
+
+/* اسم المستخدم */
+.username {
+    width: 159px;
+    height: 34px;
+    font-family: 'Tajawal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: underline;
+    color: #5C4112;
+    margin: 16px 0;
+}
+
+/* الوظيفة */
+.job-title {
+    width: 108px;
+    height: 19px;
+    font-family: 'Tajawal', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6F6F6F;
+}
+
+/* Footer Icons */
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: 332px;
+    height: 70px;
+}
+
+    .social-icons .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: #F2F2F2;
+        border-radius: 50%;
+    }
+
+        .social-icons .icon img {
+            width: 20px;
+            height: 20px;
+            background: #C4A76A;
+        }
+
+
+
+
+
+/* تصميم الجداول */
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff; /* خلفية بيضاء للجدول */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    /* تصميم الـ th */
+    .custom-table thead th {
+        background-color: #C4A76A; /* لون رؤوس الأعمدة */
+        color: white;
+        padding: 15px;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    /* تصميم الـ td */
+    .custom-table tbody td {
+        padding: 12px;
+        background-color: #ffffff; /* خلفية بيضاء للخلايا */
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+    }
+
+    /* التأثير عند تمرير الفأرة */
+    .custom-table tbody tr:hover td {
+        background-color: #f1f1f1;
+    }
+
+    /* إزالة آخر حدود السطر */
+    .custom-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+/* تصميم الأيقونات */
+.icon-link {
+    margin: 0 5px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* تأثير عند التمرير على الأيقونة */
+.icon-link:hover .icon {
+    transform: scale(1.1); /* تكبير الأيقونة قليلاً عند التمرير */
+}
